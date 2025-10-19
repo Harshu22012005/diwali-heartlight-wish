@@ -92,18 +92,18 @@ const Index = () => {
       )}
 
       {/* Main Content Container */}
-      <div className="relative z-20 max-w-6xl mx-auto px-4 py-8 md:py-12 w-full">
+      <div className="relative z-20 max-w-6xl mx-auto px-3 sm:px-4 py-6 sm:py-8 md:py-12 w-full">
         {/* Intro Animation */}
         {showIntro && (
           <div className="text-center animate-fade-in">
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <Sparkles className="w-8 h-8 md:w-12 md:h-12 text-primary animate-spin" style={{ animationDuration: '3s' }} />
-              <h2 className="text-4xl md:text-6xl lg:text-7xl font-elegant text-foreground animate-text-glow drop-shadow-2xl" style={{ textShadow: 'var(--text-shadow-strong)' }}>
+            <div className="flex items-center justify-center gap-2 sm:gap-4 mb-4 sm:mb-6 px-2">
+              <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 text-primary animate-spin flex-shrink-0" style={{ animationDuration: '3s' }} />
+              <h2 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-elegant text-foreground animate-text-glow drop-shadow-2xl text-center" style={{ textShadow: 'var(--text-shadow-strong)' }}>
                 When lights meet hearts...
               </h2>
-              <Sparkles className="w-8 h-8 md:w-12 md:h-12 text-primary animate-spin" style={{ animationDuration: '3s' }} />
+              <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 text-primary animate-spin flex-shrink-0" style={{ animationDuration: '3s' }} />
             </div>
-            <p className="text-2xl md:text-4xl lg:text-5xl font-elegant text-primary animate-fade-in-delay animate-text-glow" style={{ textShadow: 'var(--text-shadow-strong)' }}>
+            <p className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-elegant text-primary animate-fade-in-delay animate-text-glow px-2" style={{ textShadow: 'var(--text-shadow-strong)' }}>
               a new Diwali begins. 💛
             </p>
             <div className="mt-8 flex justify-center gap-2">
@@ -120,9 +120,9 @@ const Index = () => {
 
         {/* Main Content */}
         {showMain && (
-          <div className="text-center space-y-8 md:space-y-12 animate-zoom-in">
+          <div className="text-center space-y-6 sm:space-y-8 md:space-y-12 animate-zoom-in">
             {/* Harishchandra's Photo with Enhanced Glow */}
-            <div className="flex justify-center mb-8 md:mb-12">
+            <div className="flex justify-center mb-6 sm:mb-8 md:mb-12">
               <div className="relative group">
                 {/* Multiple glow layers for video effect */}
                 <div className="absolute inset-0 bg-primary rounded-full blur-[100px] opacity-60 group-hover:opacity-80 transition-opacity duration-500 animate-glow-pulse" />
@@ -136,7 +136,7 @@ const Index = () => {
                 <img
                   src={harishchandraImage}
                   alt="Harishchandra Sambhaji Pakhale"
-                  className="relative w-56 h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full object-cover border-[6px] border-primary shadow-2xl transform hover:scale-105 transition-transform duration-500 animate-glow-pulse"
+                  className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full object-cover border-4 sm:border-[6px] border-primary shadow-2xl transform hover:scale-105 active:scale-95 transition-transform duration-500 animate-glow-pulse"
                   style={{
                     boxShadow: '0 0 80px hsl(38 92% 50% / 0.8), 0 0 120px hsl(25 95% 61% / 0.6), 0 0 160px hsl(38 92% 50% / 0.4)',
                   }}
@@ -159,11 +159,11 @@ const Index = () => {
             </div>
 
             {/* Enhanced Marathi Message with Better Contrast */}
-            <div className="space-y-6 md:space-y-8 px-4">
-              <div className="inline-block bg-gradient-to-br from-card/60 via-card/50 to-card/40 backdrop-blur-xl rounded-3xl p-8 md:p-12 lg:p-16 border-2 border-primary/30 shadow-2xl animate-slide-up" style={{ boxShadow: '0 0 60px hsl(38 92% 50% / 0.3), 0 20px 60px rgba(0,0,0,0.5)' }}>
-                <div className="text-2xl md:text-4xl lg:text-6xl font-marathi text-foreground leading-relaxed space-y-6 md:space-y-8">
-                  <p className="animate-slide-up flex items-center justify-center gap-3 md:gap-4 flex-wrap" style={{ animationDelay: '0.2s' }}>
-                    <span className="text-4xl md:text-6xl lg:text-7xl animate-glow-pulse">🪔</span>
+            <div className="space-y-4 sm:space-y-6 md:space-y-8 px-2 sm:px-4">
+              <div className="inline-block bg-gradient-to-br from-card/60 via-card/50 to-card/40 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-12 lg:p-16 border-2 border-primary/30 shadow-2xl animate-slide-up max-w-full" style={{ boxShadow: '0 0 60px hsl(38 92% 50% / 0.3), 0 20px 60px rgba(0,0,0,0.5)' }}>
+                <div className="text-lg sm:text-2xl md:text-4xl lg:text-6xl font-marathi text-foreground leading-relaxed space-y-4 sm:space-y-6 md:space-y-8">
+                  <p className="animate-slide-up flex items-center justify-center gap-2 sm:gap-3 md:gap-4 flex-wrap" style={{ animationDelay: '0.2s' }}>
+                    <span className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl animate-glow-pulse flex-shrink-0">🪔</span>
                     <span className="font-bold animate-text-glow" style={{ 
                       textShadow: 'var(--text-shadow-strong)',
                       WebkitTextStroke: '1px hsl(38 92% 50% / 0.3)'
@@ -216,22 +216,22 @@ const Index = () => {
                   
                   <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent my-8 md:my-10 animate-glow-pulse" />
                   
-                  <p className="text-4xl md:text-6xl lg:text-8xl font-bold mt-8 animate-slide-up flex items-center justify-center gap-4 md:gap-6 flex-wrap" style={{ animationDelay: '2.6s' }}>
-                    <span className="animate-spin text-5xl md:text-7xl lg:text-9xl" style={{ animationDuration: '4s' }}>🌼</span>
+                  <p className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold mt-6 sm:mt-8 animate-slide-up flex items-center justify-center gap-2 sm:gap-4 md:gap-6 flex-wrap" style={{ animationDelay: '2.6s' }}>
+                    <span className="animate-spin text-4xl sm:text-5xl md:text-7xl lg:text-9xl flex-shrink-0" style={{ animationDuration: '4s' }}>🌼</span>
                     <span className="text-primary animate-text-glow" style={{ 
                       textShadow: '0 0 40px hsl(38 92% 50%), 0 0 80px hsl(38 92% 50% / 0.8), 6px 6px 12px rgba(0,0,0,0.9)',
-                      WebkitTextStroke: '2px hsl(38 92% 50% / 0.5)'
+                      WebkitTextStroke: '1px hsl(38 92% 50% / 0.5)'
                     }}>
                       शुभ दीपावली!
                     </span>
-                    <span className="animate-spin text-5xl md:text-7xl lg:text-9xl" style={{ animationDuration: '4s', animationDirection: 'reverse' }}>🌼</span>
+                    <span className="animate-spin text-4xl sm:text-5xl md:text-7xl lg:text-9xl flex-shrink-0" style={{ animationDuration: '4s', animationDirection: 'reverse' }}>🌼</span>
                   </p>
                 </div>
               </div>
 
               {/* Enhanced Signature */}
-              <div className="animate-slide-up bg-gradient-to-r from-transparent via-card/40 to-transparent backdrop-blur-md rounded-full p-4 md:p-6" style={{ animationDelay: '3s' }}>
-                <p className="text-2xl md:text-4xl lg:text-5xl font-elegant text-primary animate-text-glow font-bold" style={{ textShadow: 'var(--text-shadow-strong)' }}>
+              <div className="animate-slide-up bg-gradient-to-r from-transparent via-card/40 to-transparent backdrop-blur-md rounded-full p-3 sm:p-4 md:p-6 mx-2" style={{ animationDelay: '3s' }}>
+                <p className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-elegant text-primary animate-text-glow font-bold break-words" style={{ textShadow: 'var(--text-shadow-strong)' }}>
                   ✨ — हरिश्चंद्र संभाजी पखाले ✨
                 </p>
               </div>
@@ -244,17 +244,17 @@ const Index = () => {
 
             {/* Ending Message with Fireworks */}
             {showEnding && (
-              <div className="mt-12 md:mt-16 animate-zoom-in space-y-6">
-                <p className="text-4xl md:text-6xl font-elegant text-primary animate-text-glow">
+              <div className="mt-8 sm:mt-12 md:mt-16 animate-zoom-in space-y-4 sm:space-y-6 px-4">
+                <p className="text-3xl sm:text-4xl md:text-6xl font-elegant text-primary animate-text-glow">
                   🎆 🎇 🎆
                 </p>
-                <p className="text-xl md:text-3xl font-elegant text-foreground font-bold" style={{ textShadow: 'var(--text-shadow-strong)' }}>
+                <p className="text-lg sm:text-xl md:text-3xl font-elegant text-foreground font-bold" style={{ textShadow: 'var(--text-shadow-strong)' }}>
                   Made with ❤️ for you
                 </p>
                 <Button
                   onClick={replayAnimation}
                   variant="outline"
-                  className="bg-card/80 backdrop-blur-sm border-primary/30 text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-500 hover:scale-110 font-elegant text-lg md:text-xl px-8 md:px-12 py-4 md:py-6 rounded-full shadow-lg mt-6"
+                  className="bg-card/80 backdrop-blur-sm border-primary/30 text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary active:scale-95 transition-all duration-500 hover:scale-110 font-elegant text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-12 py-3 sm:py-4 md:py-6 rounded-full shadow-lg mt-4 sm:mt-6 min-h-[44px] touch-manipulation"
                 >
                   🔄 Replay Animation
                 </Button>
@@ -265,21 +265,21 @@ const Index = () => {
       </div>
 
       {/* Controls */}
-      <div className="fixed bottom-6 right-6 z-30 flex flex-col gap-4">
+      <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-30 flex flex-col gap-3 sm:gap-4">
         <MusicControl />
-        <div className="bg-card/80 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/30 text-sm md:text-base text-foreground font-sans font-semibold shadow-lg">
+        <div className="bg-card/80 backdrop-blur-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-primary/30 text-xs sm:text-sm md:text-base text-foreground font-sans font-semibold shadow-lg">
           Happy Diwali! 🪔
         </div>
       </div>
 
       {/* Progress indicator */}
       {!showEnding && (
-        <div className="fixed top-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
+        <div className="fixed top-4 sm:top-6 left-1/2 -translate-x-1/2 z-30 flex gap-1.5 sm:gap-2">
           {[showIntro, showMain, showEnding].map((active, i) => (
             <div
               key={i}
-              className={`h-2 rounded-full transition-all duration-500 ${
-                active ? 'w-12 bg-primary' : 'w-8 bg-primary/30'
+              className={`h-1.5 sm:h-2 rounded-full transition-all duration-500 ${
+                active ? 'w-8 sm:w-12 bg-primary' : 'w-6 sm:w-8 bg-primary/30'
               }`}
             />
           ))}
